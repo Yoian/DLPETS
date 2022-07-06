@@ -1,0 +1,23 @@
+NET "clk" LOC="E7";
+
+NET "UP" LOC="J4";
+NET "DN" LOC="K1";
+NET "SEL_SET" LOC="K3";
+NET "START_STOP" LOC="H4";
+NET "Reset" LOC="J3";
+
+NET "display(7)" LOC="K13";
+NET "display(6)" LOC="L15";
+NET "display(5)" LOC="M15";
+NET "display(4)" LOC="P15";
+NET "display(3)" LOC="P14";
+NET "display(2)" LOC="K15";
+NET "display(1)" LOC="L14";
+NET "display(0)" LOC="N15";
+
+NET "AN(3)" LOC="G12";
+NET "AN(2)" LOC="F13";
+NET "AN(1)" LOC="H12";
+NET "AN(0)" LOC="G13";
+
+

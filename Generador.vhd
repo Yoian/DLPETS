@@ -21,19 +21,23 @@ end Generador;
 
 architecture Behavioral of Generador is
 	signal Freq : integer range 1 to 99_000:=1;
+	signal Base : integer range 1 to 99;
+	signal Exp : integer range 0 to 3;
+	
 	signal Temp_Tot : integer;
 	signal High : integer;
 	signal Low : integer;
 	
 	signal duty: integer range 0 to 100:=50;
 begin
-		calc_F: process(clk,Temp_Tot,duty)
-		begin
-			Temp_Tot<=Pulsos/Freq;
-			High<=Temp_Tot*(Duty/100);
-			Low<=Temp_Tot-High;
-		end process calc_F;
 
-
+	calc_F: process(clk,Temp_Tot,duty)
+	begin
+		Temp_Tot<=Pulsos/Freq;
+		High<=Temp_Tot*(Duty/100);
+		Low<=Temp_Tot-High;
+	end process calc_F;
+	
+	Set_Duty: process(clk,
 end Behavioral;
 
